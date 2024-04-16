@@ -19,4 +19,4 @@ dependencies:
 
 # Pip-only installs
  #- pip:
-  - codecov
+  # - codecov
