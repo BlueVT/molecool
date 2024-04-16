@@ -3,7 +3,15 @@ molecool
 [//]: # (Badges)
 [![GitHub Actions Build Status](https://github.com/BlueVT/molecool/workflows/CI/badge.svg)](https://github.com/BlueVT/molecool/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/BlueVT/molecool/branch/main/graph/badge.svg)](https://codecov.io/gh/BlueVT/molecool/branch/main)
+[![Documentation Status](https://readthedocs.org/projects/molecool-bluevt/badge/?version=latest)](https://molecool-bluevt.readthedocs.io/en/latest/?badge=latest)
 
+.. image:: https://readthedocs.org/projects/molecool-bluevt/badge/?version=latest
+    :target: https://molecool-bluevt.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+<a href='https://molecool-bluevt.readthedocs.io/en/latest/?badge=latest'>
+    <img src='https://readthedocs.org/projects/molecool-bluevt/badge/?version=latest' alt='Documentation Status' />
+</a>
 
 A Python package for analyzing and visualizing xyz files.
 
