@@ -25,7 +25,7 @@ import molecool
 project = 'molecool'
 copyright = ("2023, molssi_team. Project structure based on the "
              "Computational Molecular Science Python Cookiecutter version 1.1")
-author = 'molssi_team'
+author = 'awida'
 
 # The short X.Y version
 version = ''

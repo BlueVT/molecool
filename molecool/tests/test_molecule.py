@@ -9,7 +9,6 @@ import molecool
 import numpy as np
 import pytest
 
-
 @pytest.fixture
 def methane_molecule():
     symbols = np.array(['C', 'H', 'H', 'H', 'H'])
