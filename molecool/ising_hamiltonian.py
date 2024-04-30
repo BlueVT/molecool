@@ -105,7 +105,7 @@ class IsingHamiltonian:
 
         conf = BitString(self.N)
 
-        for i in range(2**conf.N):
+        for i in range(0, 2**conf.N):
             conf.set_int_config(i)
             Ei = self.energy(conf)
             Zi = np.exp(-Ei / T)
@@ -124,3 +124,39 @@ class IsingHamiltonian:
         HC = (EE - E * E) / (T * T)
         MS = (MM - M * M) / T
         return E, M, HC, MS
+
+    def get_lowest_energy_config(self):
+        """ Find the lowest energy and said configuration
+        
+        Parameters
+        ----------
+        T      : int
+            Temperature
+
+        Returns
+        -------
+        emin  : float
+                Energy
+        cmin  : float
+                Configuration
+        """
+        x = [] # Store list of indices
+        y = [] # Store list of energies
+        xmin = None # configuration of minimum energy configuration
+        emin = 0 # minimum of energy
+        conf = BitString(self.N)
+        cmin = BitString(self.N)
+
+        for i in range(2**conf.N):
+            x.append(i)
+            conf.set_int_config(i)
+            e = self.energy(conf)
+            y.append(e)
+            if (e < emin):
+                xmin = i
+                emin = e
+                cmin = conf
+
+        cmin.set_int_config(xmin)
+
+        return emin, cmin

@@ -34,3 +34,12 @@ def test_IsingHamiltonian_compute_average_values():
     assert isinstance(M, float)
     assert isinstance(HC, float)
     assert isinstance(MS, float)
+
+def test_get_lowest_energy_config():
+    J = [[(0, 0.5), (1, -0.5)], [(1, 0.2)]]
+    mu = np.array([0.1, -0.2])
+    ising = IsingHamiltonian(J, mu)
+
+    energy, config = ising.get_lowest_energy_config()
+
+    assert energy == 0

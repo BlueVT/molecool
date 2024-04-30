@@ -143,6 +143,7 @@ class BitString:
         ----------
         None
         """
-        binary = [int(i) for i in bin(dec)[2:]]
-        self.config = np.zeros(self.N, dtype=int)
-        self.config[-len(binary):] = binary
+        if(dec != None):
+            binary = [int(i) for i in bin(dec)[2:]]
+            self.config = np.zeros(self.N, dtype=int)
+            self.config[-len(binary):] = binary

@@ -9,6 +9,7 @@ API Documentation
    molecool.IsingHamiltonian
    molecool.IsingHamiltonian.compute_average_values
    molecool.IsingHamiltonian.energy
+   molecool.IsingHamiltonian.get_lowest_energy_config
    molecool.BitString
    molecool.BitString.flip_site
    molecool.BitString.int
