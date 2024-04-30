@@ -10,7 +10,7 @@ description = "A Python package for analyzing and visualizing xyz files."
 dynamic = ["version"]
 readme = "README.md"
 authors = [
-    { name = "molssi_team", email = "info@molssi.org" }
+    { name = "awida", email = "awida" }
 ]
 license = { text = "BSD-3-Clause" }
 # See https://pypi.org/classifiers/
