@@ -22,7 +22,7 @@ class BitString:
     def __repr__(self):
         """ Return a string representation of the BitString object.
 
-        Parameters:
+        Parameters
         ----------
         self: An instance of a class with an init() method
 
@@ -35,12 +35,12 @@ class BitString:
     def __eq__(self, other):
         """ Check if two instances are equal based on their integer values.
 
-        Parameters:
+        Parameters
         ----------
         self: An instance of a class with an init() method
         other: Another instance of a class with an int() method
 
-        Returns:
+        Returns
         ----------
         True if the integer values of self and other are equal, False otherwise
         """
@@ -49,11 +49,11 @@ class BitString:
     def __len__(self):
         """ This method returns the value of the attribute 'N' which represents the length of the object.
         
-        Parameters:
+        Parameters
         ----------
         self: An instance of a class with an init() method
 
-        Returns:
+        Returns
         ----------
         int: The length of the object.
         """
@@ -62,11 +62,11 @@ class BitString:
     def on(self):
         """ Counts the number of '1' in the binary representation of the config attribute of the object.
 
-        Parameters:
+        Parameters
         ----------
         self: An instance of a class with an init() method
 
-        Returns:
+        Returns
         ----------
         int: Number of '1' in the binary representation of the config attribute.
         """
@@ -76,11 +76,11 @@ class BitString:
     def off(self):
         """ Counts the number of '0' in the binary representation of the config attribute of the object.
 
-        Parameters:
+        Parameters
         ----------
         self: An instance of a class with an init() method
 
-        Returns:
+        Returns
         ----------
         int: Number of '0' in the binary representation of the config attribute.
         """
@@ -90,11 +90,11 @@ class BitString:
     def flip_site(self,i):
         """ Flips the value of site i in the configuration and returns the count of zeros in the configuration.
 
-        Parameters:
+        Parameters
         ----------
         i (int): Index of the site to flip
 
-        Returns:
+        Returns
         ----------
         int: Number of zeros in the configuration after flipping site i
         """
@@ -103,11 +103,11 @@ class BitString:
     def int(self):
         """ Converts a binary string into an integer.
 
-        Parameters:
+        Parameters
         ----------
         self: An instance of a class with an init() method
 
-        Returns:
+        Returns
         ----------
         int: The integer value representing the binary string of the config.
         """
@@ -118,12 +118,12 @@ class BitString:
         """  Sets the configuration of the object to the binary representation of the given 
         an array.
 
-        Parameters:
+        Parameters
         ----------
         self: An instance of a class with an init() method
         s (list[int]): A list of integers representing the configuration.
 
-        Returns:
+        Returns
         ----------
         None
         """
@@ -134,12 +134,12 @@ class BitString:
     def set_int_config(self, dec:int):
         """ Sets the configuration of the object to the binary representation of the given integer.
 
-        Parameters:
+        Parameters
         ----------
         self: An instance of a class with an init() method
         dec (int): The integer value to be converted to binary and set as configuration.
 
-        Returns:
+        Returns
         ----------
         None
         """

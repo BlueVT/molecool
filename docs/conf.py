@@ -144,8 +144,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'molecool.tex', 'molecool Documentation',
-     'molecool', 'manual'),
+    (master_doc, 'molecool.tex', 'molecool Documentation', 'molecool', 'manual'),
 ]
 
 
@@ -154,8 +153,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'molecool', 'molecool Documentation',
-     [author], 1)
+    (master_doc, 'molecool', 'molecool Documentation', [author], 1)
 ]
 
 
